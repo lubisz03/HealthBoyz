@@ -1,0 +1,43 @@
+.doctors {
+  display: flex;
+  justify-content: flex-start;
+  gap: $xl-size;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: $desktop-breakpoint) {
+    height: 100%;
+    gap: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    align-content: space-around;
+  }
+}
+
+.doctor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: $desktop-breakpoint) {
+    margin-bottom: 0;
+  }
+}
+
+.doctor img {
+  height: 150px;
+  width: 150px;
+  border-radius: 1em;
+}
+
+.doctor h3 {
+  font-size: $l-size;
+  margin: $s-size 0;
+  color: $blue;
+}
+
+.doctor p {
+  font-size: $m-size;
+  width: 75%;
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+.content-container {
+  margin: 0 auto;
+  padding: $l-size $s-size;
+  max-width: 100%;
+  @media screen and (min-width: $desktop-breakpoint) {
+    max-width: 75%;
+    padding: $l-size $m-size;
+  }
+}
+
+.header-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}

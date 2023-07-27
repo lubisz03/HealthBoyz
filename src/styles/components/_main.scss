@@ -1,0 +1,11 @@
+.main {
+  background: linear-gradient(to bottom, $light-blue 0 75%, $white);
+  flex-grow: 1;
+}
+
+.home-page {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 25%;
+}

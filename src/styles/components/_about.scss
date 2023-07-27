@@ -1,0 +1,45 @@
+.about-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.about-container .content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.about-img {
+  width: 50%;
+}
+
+.about-img img {
+  border-radius: 1em;
+  opacity: 90%;
+  height: 85%;
+  width: 65%;
+}
+
+.about-text {
+  width: 35%;
+  text-align: right;
+  float: right;
+}
+
+.about-text h1 {
+  color: $blue;
+  font-size: $xl-size;
+  border-bottom: $xs-size solid $blue;
+  width: 100%;
+  margin-bottom: $m-size;
+}
+
+.about-text p {
+  font-size: $m-size;
+  text-align: right;
+}
