@@ -1,0 +1,15 @@
+.home-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 25%;
+}
+
+.home-button {
+  transition: all 0.5s;
+}
+
+.home-button:hover {
+  background-color: $blue;
+  color: $white;
+}

@@ -6,11 +6,11 @@ export const HomePage = () => {
   return (
     <>
       <div
-        className='main home-page'
+        className='main home-container'
         style={{
           backgroundImage: `url(${doctors})`,
         }}></div>
-      <Link to='/book'>
+      <Link to='/book' className='home-link'>
         <button className='button home-button'>Book a visit</button>
       </Link>
     </>

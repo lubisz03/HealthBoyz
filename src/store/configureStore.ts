@@ -12,7 +12,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 export const store = createStore(
   combineReducers({
-    menu: menuReducer,
+    isOpen: menuReducer,
   }),
   composeEnhancers(applyMiddleware(thunk))
 );

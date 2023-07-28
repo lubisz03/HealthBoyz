@@ -2,16 +2,22 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { connect } from 'react-redux';
-import { handleIsOpen } from '../actions/menu';
+import { connect, ConnectedProps } from 'react-redux';
+import { handleIsOpen, HandleIsOpenAction } from '../actions/actions';
 
-export const DropdownMenu = () => {
+interface PropsType {
+  isOpen: boolean;
+  handleIsOpen: typeof handleIsOpen;
+}
+
+const DropdownMenu: React.FC<PropsType> = ({ isOpen, handleIsOpen }) => {
+  console.log(isOpen);
   return (
     <div className='dropdown-menu'>
-      <button className='button dropdown-button'>
+      <button className='button dropdown-button' onClick={() => handleIsOpen()}>
         <FontAwesomeIcon icon={faBars} />
       </button>
-      {false && (
+      {isOpen && (
         <ul className='open'>
           <Link to='/'>
             <li>
@@ -43,3 +49,15 @@ export const DropdownMenu = () => {
     </div>
   );
 };
+
+const mapStateToProps = (state: { isOpen: boolean }) => {
+  return {
+    isOpen: state.isOpen,
+  };
+};
+
+const connector = connect(mapStateToProps, {
+  handleIsOpen,
+});
+
+export default connector(DropdownMenu);
