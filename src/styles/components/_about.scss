@@ -1,17 +1,15 @@
 .about-container {
-  height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
-.about-container .content-container {
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  height: 100%;
+  @media screen and (min-width: $desktop-breakpoint) {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .about-img {
@@ -20,15 +18,18 @@
 
 .about-img img {
   border-radius: 1em;
-  opacity: 90%;
+  opacity: 85%;
   height: 85%;
   width: 65%;
 }
 
 .about-text {
-  width: 35%;
+  width: 100%;
   text-align: right;
   float: right;
+  @media screen and (min-width: $desktop-breakpoint) {
+    width: 35%;
+  }
 }
 
 .about-text h1 {

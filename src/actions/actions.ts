@@ -4,8 +4,8 @@ export interface HandleIsOpenAction {
   type: typeof HANDLE_IS_OPEN;
 }
 
-export function handleIsOpen(): HandleIsOpenAction {
+export const handleIsOpen = (): HandleIsOpenAction => {
   return {
     type: HANDLE_IS_OPEN,
   };
-}
+};

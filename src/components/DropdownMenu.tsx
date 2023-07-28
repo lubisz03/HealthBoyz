@@ -11,7 +11,6 @@ interface PropsType {
 }
 
 const DropdownMenu: React.FC<PropsType> = ({ isOpen, handleIsOpen }) => {
-  console.log(isOpen);
   return (
     <div className='dropdown-menu'>
       <button className='button dropdown-button' onClick={() => handleIsOpen()}>
@@ -19,31 +18,31 @@ const DropdownMenu: React.FC<PropsType> = ({ isOpen, handleIsOpen }) => {
       </button>
       {isOpen && (
         <ul className='open'>
-          <Link to='/'>
-            <li>
+          <li onClick={() => handleIsOpen()}>
+            <Link to='/'>
               <h3>Home</h3>
-            </li>
-          </Link>
-          <Link to='/doctors'>
-            <li>
+            </Link>
+          </li>
+          <li onClick={() => handleIsOpen()}>
+            <Link to='/doctors'>
               <h3>Doctors</h3>
-            </li>
-          </Link>
-          <Link to='/about'>
-            <li>
+            </Link>
+          </li>
+          <li onClick={() => handleIsOpen()}>
+            <Link to='/about'>
               <h3>About us</h3>
-            </li>
-          </Link>
-          <Link to='/contact'>
-            <li>
+            </Link>
+          </li>
+          <li onClick={() => handleIsOpen()}>
+            <Link to='/contact'>
               <h3>Contact</h3>
-            </li>
-          </Link>
-          <Link to='/book'>
-            <li>
+            </Link>
+          </li>
+          <li className='button' onClick={() => handleIsOpen()}>
+            <Link to='/book'>
               <h3>Book a visit</h3>
-            </li>
-          </Link>
+            </Link>
+          </li>
         </ul>
       )}
     </div>

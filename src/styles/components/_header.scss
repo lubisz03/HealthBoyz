@@ -21,15 +21,19 @@ a {
   color: $white;
 }
 
-// Header title
 header h1 {
   font-size: $l-size;
   border-bottom: $xs-size solid $white;
 }
 
-// Mobile header menu
+.header-button:hover {
+  background-color: $white;
+}
 
-// Desktop header menu
+.header-button:hover h3 {
+  color: $blue;
+}
+
 .desktop-menu {
   display: flex;
   flex-direction: row;
@@ -41,4 +45,20 @@ header h1 {
   list-style: none;
   font-size: $m-size;
   margin-right: $l-size;
+}
+
+.desktop-menu .header-button {
+  border: $xxs-size solid;
+  border-radius: 1em;
+  border-color: $white;
+  padding: 0 $m-size;
+  transition: all 0.5s;
+}
+
+.desktop-menu .active h3 {
+  border-bottom: $xxs-size solid $white;
+}
+
+.desktop-menu .header-button .active h3 {
+  border-bottom: none;
 }

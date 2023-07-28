@@ -11,48 +11,48 @@ export const DoctorsPage = () => {
     <div className='main'>
       <div className='content-container doctors'>
         <div className='doctor'>
-          <img src={doctor1} style={{ width: '200px' }} />
-          <h3>Alison Johns</h3>
+          <img src={doctor1} />
+          <h3>William Johns</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas
             iure adipisci, esse consectetur neque atque quam inventore illo.
           </p>
         </div>
         <div className='doctor'>
-          <img src={doctor2} style={{ width: '200px' }} />
-          <h3>Caroline Janowski</h3>
+          <img src={doctor2} />
+          <h3>Robert Janowski</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas
             iure adipisci, esse consectetur neque atque quam inventore illo.
           </p>
         </div>
         <div className='doctor'>
-          <img src={doctor3} style={{ width: '200px' }} />
-          <h3>Cindy Pickleberry</h3>
+          <img src={doctor3} />
+          <h3>Richard Smith</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas
             iure adipisci, esse consectetur neque atque quam inventore illo.
           </p>
         </div>
         <div className='doctor'>
-          <img src={doctor4} style={{ width: '200px' }} />
-          <h3>Barbara George</h3>
+          <img src={doctor4} />
+          <h3>Thomas George</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas
             iure adipisci, esse consectetur neque atque quam inventore illo.
           </p>
         </div>
         <div className='doctor'>
-          <img src={doctor5} style={{ width: '200px' }} />
-          <h3>Linda Novacki</h3>
+          <img src={doctor5} />
+          <h3>Joseph Nowacki</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas
             iure adipisci, esse consectetur neque atque quam inventore illo.
           </p>
         </div>
         <div className='doctor'>
-          <img src={doctor6} style={{ width: '200px' }} />
-          <h3>Ivy Smith</h3>
+          <img src={doctor6} />
+          <h3>David Greg</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quas
             iure adipisci, esse consectetur neque atque quam inventore illo.

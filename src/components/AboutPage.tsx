@@ -2,18 +2,18 @@ import * as React from 'react';
 import nurse from '../images/nurse.jpg';
 
 export const AboutPage = () => {
-  let isMobile: boolean;
-  isMobile = window.innerWidth <= 450;
+  let isDesktop: boolean;
+  isDesktop = window.innerWidth > 450;
 
   return (
     <div className='main'>
       <div className='content-container about-container'>
-        {!isMobile && (
-          <div className='content-container about-img'>
+        {isDesktop && (
+          <div className='about-img'>
             <img src={nurse} />
           </div>
         )}
-        <div className='content-container about-text'>
+        <div className='about-text'>
           <h1>We are</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae

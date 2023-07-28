@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import DropdownMenu from './DropdownMenu';
 
 export const Header = () => {
@@ -9,38 +9,38 @@ export const Header = () => {
   return (
     <header>
       <div className='content-container header-container'>
-        <Link to='/'>
+        <NavLink to='/'>
           <h1>HealthBoyz</h1>
-        </Link>
+        </NavLink>
         {isMobile ? (
           <DropdownMenu />
         ) : (
           <ul className='desktop-menu'>
-            <Link to='/'>
-              <li>
+            <li>
+              <NavLink to='/'>
                 <h3>Home</h3>
-              </li>
-            </Link>
-            <Link to='/doctors'>
-              <li>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to='/doctors'>
                 <h3>Doctors</h3>
-              </li>
-            </Link>
-            <Link to='/about'>
-              <li>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to='/about'>
                 <h3>About us</h3>
-              </li>
-            </Link>
-            <Link to='/contact'>
-              <li>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to='/contact'>
                 <h3>Contact</h3>
-              </li>
-            </Link>
-            <Link to='/book'>
-              <li className='button header-button'>
+              </NavLink>
+            </li>
+            <li className='button header-button'>
+              <NavLink to='/book' className='link'>
                 <h3>Book a visit</h3>
-              </li>
-            </Link>
+              </NavLink>
+            </li>
           </ul>
         )}
       </div>

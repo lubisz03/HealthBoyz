@@ -1,8 +1,10 @@
 .dropdown-button {
   display: inline-block;
   border: none;
+  border-radius: none;
   background: none;
   position: relative;
+  font-size: $l-size;
   cursor: pointer;
   background-color: transparent;
   color: $white;
