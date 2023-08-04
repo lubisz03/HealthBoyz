@@ -1,12 +1,17 @@
-const menuReducerDefaultState: boolean = false;
+const menuReducerDefaultState: {
+  isOpen: boolean;
+  isOpenDoctors: boolean;
+} = { isOpen: false, isOpenDoctors: false };
 
 export const menuReducer = (
-  state: boolean = menuReducerDefaultState,
+  state = menuReducerDefaultState,
   action: { type: string }
-): boolean => {
+) => {
   switch (action.type) {
     case 'HANDLE_IS_OPEN':
-      return !state;
+      return { ...state, isOpen: !state.isOpen };
+    case 'HANDLE_IS_OPEN_DOCTORS':
+      return { ...state, isOpenDoctors: !state.isOpenDoctors };
     default:
       return state;
   }

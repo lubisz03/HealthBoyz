@@ -49,9 +49,11 @@ const DropdownMenu: React.FC<PropsType> = ({ isOpen, handleIsOpen }) => {
   );
 };
 
-const mapStateToProps = (state: { isOpen: boolean }) => {
+const mapStateToProps = (state: {
+  menu: { isOpen: boolean; isOpenDocotors: boolean };
+}) => {
   return {
-    isOpen: state.isOpen,
+    isOpen: state.menu.isOpen,
   };
 };
 
