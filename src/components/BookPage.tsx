@@ -25,6 +25,23 @@ interface PropsType {
 
 const BookPage: React.FC<PropsType> = ({ doctorsData, getDoctorsData }) => {
   const [startDate, setStartDate] = useState(new Date());
+  const [hours, setHours] = useState([
+    '08:00',
+    '08:30',
+    '09:00',
+    '09:30',
+    '10:00',
+    '10:30',
+    '11:00',
+    '11:30',
+    '12:00',
+    '12:30',
+    '13:00',
+    '14:30',
+    '15:00',
+    '15:30',
+    '16:00',
+  ]);
   return (
     <div className='main'>
       <form className='content-container book-container'>
@@ -40,7 +57,18 @@ const BookPage: React.FC<PropsType> = ({ doctorsData, getDoctorsData }) => {
               onChange={(date) => setStartDate(date)}
             />
           </div>
-          <div className='time'></div>
+          <div className='time'>
+            <h3>Select time:</h3>
+            <ul className='book-hours'>
+              {hours.map((hour, index) => {
+                return (
+                  <li key={index} className='hour'>
+                    {hour}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
           <button>Book!</button>
         </div>
       </form>

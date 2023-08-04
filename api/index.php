@@ -1,7 +1,7 @@
 <?php 
     include("./dbconfig.php");
     include("./dbconnection.php"); 
-    include("./functions/doctors.php");
+    include("./models/doctors.php");
 
     header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, PATCH, OPTIONS');
     header('Access-Control-Max-Age: 1000');
