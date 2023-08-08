@@ -60,4 +60,9 @@ header h1 {
 
 .header-button .active h3 {
   border-bottom: none;
+  color: $blue;
+}
+
+.header-button:has(> .active) {
+  background-color: $white;
 }

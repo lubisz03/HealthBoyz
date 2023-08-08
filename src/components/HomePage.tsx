@@ -18,11 +18,12 @@ interface PropsType {
 const HomePage: React.FC<PropsType> = ({ doctorsData, getDoctorsData }) => {
   useEffect(() => {
     axios
-      .get('http://localhost/healthboyz/index.php')
+      .get(`${process.env.API_BASE_URL}${process.env.DOCTORS}`)
       .then(function (response) {
         getDoctorsData(response.data);
       });
   }, []);
+
   return (
     <>
       <div

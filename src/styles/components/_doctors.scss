@@ -31,9 +31,9 @@
 }
 
 .doctor h3 {
-  font-size: $l-size;
-  margin: $s-size 0;
-  color: $blue;
+  font-size: $l-size !important;
+  margin: $s-size 0 !important;
+  color: $blue !important;
 }
 
 .doctor p {

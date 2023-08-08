@@ -7,27 +7,10 @@
   @media screen and (min-width: $desktop-breakpoint) {
     overflow: hidden;
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: row;
-    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-  }
-}
-
-.doctor-details {
-  width: 100%;
-  background-color: $white;
-  border-radius: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: $l-size 0;
-  margin-bottom: $m-size;
-  @media screen and (min-width: $desktop-breakpoint) {
-    width: 30%;
-    margin: 0;
   }
 }
 
@@ -40,11 +23,56 @@
   background-color: $white;
   color: $blue;
   border-radius: 1em;
-  padding: $l-size 0;
+  padding: $m-size;
   @media screen and (min-width: $desktop-breakpoint) {
     width: fit-content;
     margin-bottom: 0;
   }
+}
+
+.booking-details .generals {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  background-color: $white;
+  color: $blue;
+  border-radius: 1em;
+  gap: $m-size;
+  margin-bottom: $m-size;
+}
+
+.booking-details .book-inpt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: $xs-size;
+}
+
+.booking-details .generals select {
+  cursor: pointer;
+}
+
+.booking-details .generals input,
+.booking-details .generals select {
+  width: 100%;
+  outline: none;
+  border: $xxs-size solid $blue;
+  border-radius: 1em;
+  padding: $xxs-size $xs-size;
+  font-size: $m-size;
+  background-color: $white;
+  color: $blue;
+  font-family: 'Rubik', sans-serif;
+}
+
+.booking-details select option {
+  color: $blue;
+  background-color: $white;
+  cursor: pointer;
 }
 
 .booking-details .date {
@@ -52,7 +80,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
 }
 
 .booking-details .time {
@@ -60,13 +88,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   height: 50%;
 }
 
-.booking-details h3 {
+.book-container h3 {
   text-align: left;
-  font-size: $l-size;
+  font-size: $m-size;
   width: 100%;
 }
 
@@ -104,6 +132,14 @@
   color: $white;
 }
 
+.booking-details li.booked,
+.booking-details li.booked:hover {
+  border: $xxs-size solid $light-blue;
+  cursor: none;
+  background-color: $white;
+  color: $light-blue;
+}
+
 .booking-details .button {
   background-color: $blue;
   border-radius: 1em;
@@ -117,4 +153,11 @@
 .booking-details .button:hover {
   background-color: $white;
   color: $blue;
+}
+
+.booking-details .button:disabled,
+.booking-details .button[disabled] {
+  color: $white;
+  border: $xxs-size solid $light-blue;
+  background-color: $light-blue;
 }

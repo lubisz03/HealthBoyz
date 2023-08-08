@@ -1,17 +1,17 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-require('dotenv').config();
+const dotenv = require('dotenv');
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 if (process.env.NODE_ENV == 'production') {
-  require('dotenv').config({
-    path: path.resolve(__dirname, '.env.production'),
+  dotenv.config({
+    path: path.resolve(__dirname, '.env.api'),
   });
 } else {
-  require('dotenv').config({
-    path: path.resolve(__dirname, '.env.development'),
+  dotenv.config({
+    path: path.resolve(__dirname, '.env.api'),
   });
 }
 
@@ -45,6 +45,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'dist', 'index.html'),
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      'process.env.API_BASE_URL': JSON.stringify(process.env.API_BASE_URL),
+      'process.env.BOOKED': JSON.stringify(process.env.BOOKED),
+      'process.env.DOCTORS': JSON.stringify(process.env.DOCTORS),
     }),
   ],
   resolve: {
