@@ -18,7 +18,7 @@ HealthBoyz is a comprehensive full-stack personal project that empowers users to
 ![](/screenshots/contact_page.png)
 
 **_Reservation Page:_**
-![](/screenshots/book_page.png)
+![](/screenshots/booking_page.png)
 
 **_Booking Form:_**
 ![](/screenshots/booking_form.png)
