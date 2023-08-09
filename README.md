@@ -35,8 +35,8 @@ HealthBoyz is a comprehensive full-stack personal project that allows users to s
 ## Guide:
 
 1. Clone the repository.
-2. Open the console in the project directory and run 'npm install'.
-3. Ensure that you have PHP installed on your machine.
+2. Ensure that you have PHP and Node installed on your machine.
+3. Open the console in the project directory and run 'npm install'.
 4. Copy the contents of the API folder (not the folder itself) into your server directory (e.g., XAMPP).
 5. Start your PHP and MySQL server and create a new database.
 6. Update the credentials and database information in the 'dbconfig.php' file.
