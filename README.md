@@ -31,4 +31,15 @@ HealthBoyz is a comprehensive full-stack personal project that allows users to s
 - ReactJS + Redux :white_check_mark:
 - PHP :white_check_mark: 
 - MySQL :white_check_mark:
+
+## Guide:
+
+1. Clone the repository.
+2. Open the console in the project directory and run 'npm install'.
+3. Ensure that you have PHP installed on your machine.
+4. Copy the contents of the API folder (not the folder itself) into your server directory (e.g., XAMPP).
+5. Start your PHP and MySQL server and create a new database.
+6. Update the credentials and database information in the 'dbconfig.php' file.
+7. Execute the 'db.sql' file to create the necessary tables (doctors and appointments).
+8. In the cloned GitHub front-end environment, run the commands 'npm run dev' and 'npm run start' for your frontend setup.
   
