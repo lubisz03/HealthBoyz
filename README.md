@@ -1,7 +1,7 @@
 # HealthBoyz
 
 ## About:
-HealthBoyz is a comprehensive full-stack personal project that empowers users to seamlessly access essential healthcare information, connect with medical professionals, and effortlessly schedule appointments with their preferred doctors. Built using cutting-edge technologies such as ReactJS, TypeScript, SCSS, PHP, and MySQL, the website offers an intuitive, user-friendly experience that caters to the healthcare needs of individuals.
+HealthBoyz is a comprehensive full-stack personal project that allows users to seamlessly access essential company informations, contact with medical professionals, and effortlessly schedule appointments with their preferred doctors. The responsive website built using reliable technologies offers an intuitive, user-friendly experience that meets the needs of potential customers.
 
 ## Screenshots:
 
