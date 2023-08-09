@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import doctors from '../images/doctors.jpg';
 import { connect, ConnectedProps } from 'react-redux';
@@ -16,14 +15,6 @@ interface PropsType {
 }
 
 const HomePage: React.FC<PropsType> = ({ doctorsData, getDoctorsData }) => {
-  useEffect(() => {
-    axios
-      .get(`${process.env.API_BASE_URL}${process.env.DOCTORS}`)
-      .then(function (response) {
-        getDoctorsData(response.data);
-      });
-  }, []);
-
   return (
     <>
       <div

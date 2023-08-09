@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import axios from 'axios';
 import doctor1 from '../images/doctor1.jpg';
 import doctor2 from '../images/doctor2.jpg';
 import doctor3 from '../images/doctor3.jpg';
@@ -20,6 +21,14 @@ interface PropsType {
 }
 
 const DoctorsPage: React.FC<PropsType> = ({ doctorsData, getDoctorsData }) => {
+  useEffect(() => {
+    axios
+      .get(`${process.env.API_BASE_URL}${process.env.DOCTORS}`)
+      .then(function (response) {
+        getDoctorsData(response.data);
+      });
+  }, []);
+
   return (
     <div className='main'>
       <div className='content-container doctors'>
