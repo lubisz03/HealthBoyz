@@ -41,5 +41,5 @@ HealthBoyz is a comprehensive full-stack personal project that allows users to s
 5. Start your PHP and MySQL server and create a new database.
 6. Update the credentials and database information in the 'dbconfig.php' file.
 7. Execute the 'db.sql' file to create the necessary tables (doctors and appointments).
-8. In the cloned GitHub front-end environment, run the commands 'npm run dev' and 'npm run start' for your frontend setup.
+8. In the cloned GitHub front-end environment, run the commands 'npm run dev' and 'npm run start' to run the app.
   
