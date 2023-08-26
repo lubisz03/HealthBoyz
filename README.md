@@ -27,7 +27,7 @@ HealthBoyz is a comprehensive full-stack personal project that allows users to s
 ## Technologies:
 
 - HTML5 :white_check_mark:
-- SCSS :white_check_mark:
+- SASS :white_check_mark:
 - TypeScript :white_check_mark:
 - ReactJS + Redux :white_check_mark:
 - PHP :white_check_mark:
